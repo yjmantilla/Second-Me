@@ -170,7 +170,7 @@ python -m flask run --host=0.0.0.0 --port=8002 >> "logs/backend.log" 2>&1
 # Start the Frontend Server (Open Another Terminal Shell)
 cd lpm_frontend
 npm run build
-npm run start
+npm run dev
 ```
 
 > :information_source: **Note**: If the frontend and backend are deployed on separate servers, make sure to configure the `HOST_ADDRESS` in the `.env` file accordingly.
