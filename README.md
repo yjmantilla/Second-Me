@@ -147,8 +147,8 @@ cd ..
 unzip -q dependencies/llama.cpp.zip
 cd llama.cpp
 mkdir -p build && cd build
-cmake ..
-cmake --build . --config Release
+cmake .. -G "MinGW Makefiles"
+mingw32-make
 cd ../..
 ```
 

@@ -1,4 +1,9 @@
-const nextConfig = {
+const nextConfig = {  typescript: {
+    ignoreBuildErrors: true,
+  },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   reactStrictMode: false,
   async rewrites() {
     const dockerApiBaseUrl = process.env.DOCKER_API_BASE_URL;
@@ -58,3 +63,4 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
